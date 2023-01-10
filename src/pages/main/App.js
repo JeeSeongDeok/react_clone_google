@@ -4,12 +4,10 @@ import 'pages/main/App.css'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <body className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello Google.
-        </p>
-      </header>
+        <input type="text" className="App-area" />
+      </body>
     </div>
   );
 }
