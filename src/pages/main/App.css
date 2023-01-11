@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #ffffff;
   min-height: 80vh;
@@ -14,19 +10,31 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(0, 0, 0);
 }
 
 .App-area {
-  border-radius: 13px;
+  border-style: solid;
+  border-radius: 10px;
   min-width: 50vh;
   margin-top: 3vh;
-  border-top-color: #ffffff;
-  border-left-color: #ffffff;
-  border-right-color: #dadbdf;
-  border-bottom-color: #dadbdf;
   border-width: 2px;
   padding-left: 10px;
   padding: 8px;
-  outline-color: #fe6b8b;
+  border-color: #dfe1e5;
+  outline: #dfe1e5;
+  box-shadow: none;
+}
+
+.App-enter-area {
+  border-style: solid;
+  border-radius: 10px;
+  min-width: 50vh;
+  margin-top: 3vh;
+  border-width: 2px;
+  padding-left: 10px;
+  padding: 8px;
+  border-color: #dfe1e5;
+  outline: #dfe1e5;
+  box-shadow: 1px 1px 0px 0px #9aa0a6;
+  border-top-width: 0px;
 }
