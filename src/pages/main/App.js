@@ -1,7 +1,7 @@
 import logo from "assets/googlelogo_color_272x92dp.png";
 import "pages/main/App.css";
 import React, { useState } from "react";
-import Search from "component/Search/Search";
+import Search from "component/Search/SearchBar";
 
 function App() {
   const [textArea, setTextArea] = useState(false);
@@ -46,6 +46,7 @@ function App() {
         </span>
       </header>
       <body className="App-body">
+        <div id="blank" />
         <div>
           <img src={logo} className="App-logo" alt="logo" />
         </div>

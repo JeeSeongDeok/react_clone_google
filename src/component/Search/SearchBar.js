@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "component/Search/Search.css";
+import "component/Search/SearchBar.css";
 
 function Search() {
     const [textArea, setTextArea] = useState(false);
