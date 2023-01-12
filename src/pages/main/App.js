@@ -1,6 +1,7 @@
 import logo from "assets/googlelogo_color_272x92dp.png";
 import "pages/main/App.css";
 import React, { useState } from "react";
+import Search from "component/Search/Search";
 
 function App() {
   const [textArea, setTextArea] = useState(false);
@@ -49,16 +50,7 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
         </div>
         <div>
-          <input
-            type="text"
-            className={
-              textArea
-                ? "App-area-icon App-area-enter App-area"
-                : "App-area-icon App-area"
-            }
-            onMouseEnter={() => textAreaEnter()}
-            onMouseLeave={() => textAreaOut()}
-          />
+          <Search />
         </div>
       </body>
     </div>

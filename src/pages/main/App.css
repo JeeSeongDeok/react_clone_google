@@ -34,29 +34,3 @@
 .App-logo {
   margin-bottom: 3vh;
 }
-
-.App-area-icon {
-  background: url(../../assets/search-icon-png-18.png);
-  background-position: 8px 8px;
-  background-repeat: no-repeat;
-  background-size: 15px;
-  padding-left: 30px;
-}
-
-.App-area {
-  border-style: solid;
-  border-radius: 10px;
-  min-width: 50vh;
-  border-width: 2px;
-  padding-right: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-color: #dfe1e5;
-  outline: #dfe1e5;
-  box-shadow: none;
-}
-
-.App-area-enter {
-  box-shadow: 1px 1px 0px 0px #9aa0a6;
-  border-top-width: 0px;
-}
