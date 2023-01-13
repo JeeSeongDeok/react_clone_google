@@ -3,12 +3,6 @@ import "component/Search/SearchBar.css";
 
 function Search() {
     const [textArea, setTextArea] = useState(false);
-    const textAreaEnter = () => {
-        setTextArea(true);
-    };
-    const textAreaOut = () => {
-        setTextArea(false);
-    };
 
     return (
         <div>
@@ -19,8 +13,8 @@ function Search() {
                         ? "App-area-enter"
                         : ""
                 }
-                onMouseEnter={() => textAreaEnter()}
-                onMouseLeave={() => textAreaOut()}
+                onMouseEnter={() => setTextArea(true)}
+                onMouseLeave={() => setTextArea(false)}
             />
         </div>
     );
