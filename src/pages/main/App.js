@@ -4,27 +4,8 @@ import React, { useState } from "react";
 import Search from "component/Search/SearchBar";
 
 function App() {
-  const [textArea, setTextArea] = useState(false);
   const [googleInfoUnderLineState, setGoogleInfoState] = useState(false);
   const [storeUnderLineState, setStoreState] = useState(false);
-  const textAreaEnter = () => {
-    setTextArea(true);
-  };
-  const textAreaOut = () => {
-    setTextArea(false);
-  };
-  const googleInfoEnter = () => {
-    setGoogleInfoState(true);
-  };
-  const googleInfoOut = () => {
-    setGoogleInfoState(false);
-  };
-  const storeInfoEnter = () => {
-    setStoreState(true);
-  };
-  const storeInfoOut = () => {
-    setStoreState(false);
-  };
   return (
     <div className="App">
       <header className="App-header">
@@ -32,15 +13,15 @@ function App() {
           className={
             googleInfoUnderLineState ? "App-span-enter" : "App-span-out"
           }
-          onMouseEnter={() => googleInfoEnter()}
-          onMouseOut={() => googleInfoOut()}
+          onMouseEnter={() => setGoogleInfoState(true)}
+          onMouseOut={() => setGoogleInfoState(false)}
         >
           Google 정보
         </span>
         <span
           className={storeUnderLineState ? "App-span-enter" : "App-span-out"}
-          onMouseEnter={() => storeInfoEnter()}
-          onMouseOut={() => storeInfoOut()}
+          onMouseEnter={() => setStoreState(true)}
+          onMouseOut={() => setStoreState(false)}
         >
           스토어
         </span>
